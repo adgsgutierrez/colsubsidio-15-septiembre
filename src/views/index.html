@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/view.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Create Activities</title>
+    <script type="module" src="js/modules.js"></script>
+</head>
+<body>
+    <header>
+        <img src="https://7212050.fs1.hubspotusercontent-na1.net/hubfs/7212050/Sitio%20.COM/new-content/nuevo-logo-colsubsidio-2021.svg" alt="Colsubsidio caja de compensación familiar" title="Colsubsidio caja de compensación familiar" class="desktop" loading="lazy" width="170" height="43">
+        <p>Gestor de Actividades Empresariales</p>
+    </header>
+    <div id="notification" class="notification"></div>
+    <div class="container">
+        <section class="separador-columns">
+            <p>Crear una nueva Actividad</p>
+            <form action="/v1/item/create" method="POST">
+                <input type="text" name="name" maxlength="100" placeholder="Nombre">
+                <input type="text" name="description" maxlength="150" placeholder="Descripción">
+                <button type="submit" value="Create">Crear</button>
+            </form>
+        </section>
+        <section class="section-columns">
+            <div class="separador-columns columns-scroll section-backlog" id="section-backlog">
+                <p>Por hacer</p>
+            </div>
+            <div class="separador-columns columns-scroll section-inprogress" id="section-inprogress">
+                <p>En Progreso</p>
+            </div>
+            <div class="separador-columns columns-scroll section-complete" id="section-complete">
+                <p>Terminado</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

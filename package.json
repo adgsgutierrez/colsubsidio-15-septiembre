@@ -1,0 +1,32 @@
+{
+  "name": "colsubsidio-15-septiembre",
+  "version": "1.0.0",
+  "description": "Proyecto de registro y consulta de actividades laborales",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "liveserver": "node --watch --watch-preserve-output --watch-path=\"./src\" --watch-path=\"./src/views\" \"src/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adgsgutierrez/colsubsidio-15-septiembre.git"
+  },
+  "keywords": [
+    "nodejs",
+    "ToDo",
+    "express"
+  ],
+  "author": "Aric Gutierrez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adgsgutierrez/colsubsidio-15-septiembre/issues"
+  },
+  "homepage": "https://github.com/adgsgutierrez/colsubsidio-15-septiembre#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mysql2": "^3.11.2",
+    "sequelize": "^6.37.3"
+  }
+}
