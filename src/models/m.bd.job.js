@@ -19,8 +19,8 @@ const jobTable = database.connect().define('t_job_workers', {
         type: DataTypes.INTEGER,
         allowNull: false
     }
-    }, {
-        timestamps: false
-    });
-
+}, {
+    timestamps: false
+});
+jobTable.sync(); // Add this line to create the table if it doesn't exist
 module.exports = jobTable;
