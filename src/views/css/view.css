@@ -94,7 +94,7 @@ div > p {
 }
 
 .columns-scroll{
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: none;
 }
 
